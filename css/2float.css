@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* 태그 초기화, tag reset */
+body{margin: 0px; padding: 0px;}
+/* 테두리 바깥 외부여백 margin 테두리 안쪽 내부여백 padding
+margin: 10px 17px 5px 25px; 사이즈가 각각 다를 경우 top을 기준으로 시계방향으로 회전
+margin: 10px 30px; 수직과 수평이 같은 경우(수직이 먼저이다)
+margin: 35px; 상하좌우여백이 동일한 경우는 한번만 작성 */
+
+
+#wrap{border: 10px Solid #ff0000} /* 테두리 옵션 : 두께, 스타일, 색상 */
+#header{height: 100px; background: #ffff00;}
+#sidebar{float: left; width: 25%; height: 500px; background: #f74764}
+#content{float: right; width: 70%; height: 700px; background: #008000} 
+#footer{clear: both; height: 150px; background: #800080}
+/* 자식이 float 속성을 가지면 부모는 높이를 알지못해 문제가 발생된다.
+해결하려면 마지막 자식에서 clear 속성을 추가해 준다.
+clear: left, right, both
+clear는 float 속성을 해제한다 */
