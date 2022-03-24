@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* tag reset */
+body, ul{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+
+body{font-family: "맑은 고딕", "malgun gothic", "나눔고딕", "nanumgothic", "verdana"; font-size: 1em; color: #666;} /* 서체명은 사용자의 컴퓨터에 없을 경우를 대비해서 3순위까지 작성하자. 한글이름이나 서체명 중간에 공백이 있는 경우 인용부호로 둘러싼다
+1. 인식의 용이성, 1.3 명료성, 1.3.3 텍스트 콘텐츠의 명도 대비
+배경과 글자 사이의 명도대비는 4.5대 1 이상 => 확대기능이 있는 경우 3대 1 */
+#listBox{margin: 2em; border: 1px dashed #ff0000; width: 25em;}
+#listBox li{padding:1em 1em 2em 1em;}
+#listBox .bg{background: #ffff00 url("../images/corner.gif") no-repeat right bottom;}
+
+/*
+body - 16px
+h1 - 40px
+h1 span의 2em 2rem의 크기를 px 단위로 바꾸면?
+
+2em : 40픽셀(부모의 h1크기)의 2배 = 40px*2em = 80px
+2rem : 16픽셀(root인 body의 크기)의 2배 = 16px*2rem = 32px
+*/
