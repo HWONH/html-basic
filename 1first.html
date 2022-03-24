@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- 주 사용언어 -->
+    <!-- 주석 : 브라우저에서는 보여지지 않는 설명을 작성하는 공간, html주석 -->
+    <!-- 문서의 기본 정보를 담은 head 태그 -->
+    <head>
+        <meta charset="utf-8"> <!-- 문자인코딩 방식, 다국어를 지원, 유니코드 -->
+        <title>웹문서의 제목</title>
+        <style>
+            /* 스타일시트인 css의 주석 */
+            /* 태그선택자(타입선택자) */
+            h1{
+                font-size: 50px;
+                color: #008000;
+                text-decoration: underline;
+            }
+            /* 아이디선택자 : 아이디명 앞에 구별하기 위해 #기호를 추가 - 동일한 페이지에서는 반복해서 사용할 수 없음 */
+            #italic{
+                font-style: italic
+            }
+            /* 클래스선택자 : 클래스명 앞에 구별하기 위해 .기호를 추가 - 동일한 페이지에서 반복해서 사용할 수 있음 */
+            .gungseo{
+                font-family: "궁서", gungseo;
+                font-size: 40px;
+            }
+        </style>
+    </head>
+
+    <!-- 실제로 화면에 보여지는 내용을 담는 body 태그 -->
+    <body>
+        <!-- 블록엘리먼트 -->
+        <div class="gungseo">영역을 그룹지어 스타일을 적용하는 div 태그</div>
+        <h1>제목을 나타내는 h1 태그</h1>
+        <h2>제목을 나타내는 h2 태그</h2>
+        <h3 id="italic">제목을 나타내는 h3 태그</h3>
+        <h4>제목을 나타내는 h4 태그</h4>
+        <h5>제목을 나타내는 h5 태그</h5>
+        <h6>제목을 나타내는 h6 태그</h6>
+        <P class="gungseo">문장이나 문단을 작성할때 사용하는 p 태그</P>
+
+        <!-- 인라인엘리먼트 -->
+        <span style="font-size: 30px;color: red;">인라인에서 컨텐츠를 그룹지어 주는 span 태그</span>
+        <span>인라인에서 컨텐츠를 그룹지어 주는 span 태그</span>
+        <a href="http://www.google.com">링크를 작성할 때 사용하는 a 태그</a>
+        <img src="images/hippo.jpg" alt="대체텍스트">
+        <strong class="gungseo">강조하고자 하는 중요한 글은 strong 태그</strong>
+    </body>
+</html>
