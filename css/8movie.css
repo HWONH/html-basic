@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* tag reset */
+body, h1, p, ul{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+a{color: inherit; text-decoration: none;}
+h1{font-size: 100%;} /* font-size: inherit; */
+img{border: none;} /* i.e. 하위버전에서는 a태그 내부의 img태그는 파랑 테두리가 자동으로 생성된다 */
+
+body{font-family: "맑은 고딕", "malgun gothic", "나눔고딕", nanumgothic, sans-serif; font-size: 1em; color: #666;}
+#content{border: 1px solid #999; width: 1098px; margin: 50px auto;}
+/* 박스모델 : 완성된 요소의 크기는 width + padding + border
+width는 padding과 border를 제외한 실제 컨텐츠의 크기
+브라우저의 정 가운데 컨텐츠를 위치 시키려면 가로 크기를 지정하고, 수평 방향 margin을 auto로 설정한다
+ */
+h1, h1 + p{padding: 15px 30px;} /* 인접선택자 h1 + p => h1 태그와 인접한 바로 뒤 p태그 하나만을 호출 */
+h1{font-size: 1.4em; background: #adff2f; border-bottom: 1px dashed #999;}
+
+#movie:after{content: ""; display: block; clear: both;}
+#movie li{float: left; width: 306px; margin: 30px; background: url("../images/shadow.gif") no-repeat;}
+#movie li a{display: block;}
+#movie li a img{position: relative; top: -5px; left: -5px; padding: 4px; border: 1px solid #aaa;}
+/* absolute : 절대 좌표로 기준점 하나, 만약 absolute로 했다면 6장의 사진이 같은 위치에 포개어져 보인다
+relative : 상대 좌표로 현재 나 자신의 위치에서 상대적으로 이동할 위치를 말한다
+top/left/right/bottom 음수(-)값이 가능함 */
+
+#movie li a strong{display: block; padding: 10px 0px; font-size: 1.125em;}
+#movie li a p{font-size: 0.875em; line-height: 1.4; height: 110px;}
+#movie li:hover a p, #movie li a:focus p{color: #0000ff;}
+/* 
+:hover 모든 태그에 가능함
+:focus 제한적 : a, form의 자식(input, select, textarea) => 키보드에서 탭버튼을 눌러 파랑 테두리로 활성화된(선택되어진) 영역
+디자인 때문에 포커스가 갔을 경우 파랑 테두리를 보이지 않게 스타일 처리하면 접근성 위배
+
+2. 운용의 용이성, 2.1 입력장치 접근성, 2.1.1 키보드 사용 보장
+=> 마우스로 할 수 있는 모든 것은 키보드로도 접근할 수 있어야 한다
+ */
