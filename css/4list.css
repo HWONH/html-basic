@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* 태그 초기화, tag reset */
+body{margin: 0px; padding: 0px;}
+ul, ol{list-style: none; margin: 0px; padding: 0px;}
+dl, dd{margin: 0px;}
+
+/* 그룹선택자 : 동일한 스타일의 여러 선택자가 존재하면 콤마로 이어 작성한다 */
+#list1, #list2, #list3, #list4{border: 10px solid #f00}
+/* 하위선택자 : 가장 가까운 부모의 아이디나 클래스명을 적고 한칸 띄워서 나 자신을 호출 */
+#list1 li, #list2 li, #list3 dt, #list3 dd, #list4 dt, #list4 dd{border: 1px dashed #00f}

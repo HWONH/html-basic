@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>목록태그의 3가지 종류</title>
+        <link href="css/4list.css" rel="stylesheet">
+    </head>
+    <body>
+        <ul id="list1">
+            <li>순서없는 목록 ul 태그</li>
+            <li>ul 태그의 자식은 반드시 li 태그만 가능함</li>
+            <li>unorder list, list item</li>
+        </ul>
+
+        <ol id="list2">
+            <li>순서있는 목록 ol 태그</li>
+            <li>ol 태그의 자식은 반드시 li 태그만 가능함</li>
+            <li>order list, list item</li>
+        </ol>
+
+        <dl id="list3">
+            <dt>설명 목록을 나타내는 태그</dt>
+            <dd>dt 태그인 용어와 dd 태그인 설명을 의미한다</dd>
+            <dt>dl 태그는 description list</dt>
+            <dd>dt 태그는 description term, dd 태그는 description details</dd>
+        </dl>
+        
+        <dl id="list4">
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language</dd>
+        </dl>
+        <!-- dl 태그는 스크린리더에서 잘 반영하지 못한다. 대신 ul 태그를 사용하길 권장.
+            만약 dl 태그를 꼭 써야한다면 dt 하나에 dd 하나씩을 1:1로 매칭하자 -->
+    </body>
+</html>
